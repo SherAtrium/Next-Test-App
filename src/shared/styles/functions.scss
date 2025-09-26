@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "./variables" as vars;
+
+// Convert a key (like $theme-gray-3) into CSS var() reference with optional fallback
+@function mapping-scss-variables-to-css-variables($key, $fallback: null) {
+  // Validate the key exists in known maps (light theme as the superset)
+  @if not map.has-key(vars.$theme-light, $key) {
+    @error "key: #{$key} is not a key in the theme map. Check variables.scss.";
+  }
+
+  @if $fallback {
+    @return var($key, $fallback);
+  } @else {
+    @return var($key);
+  }
+}
+
+// Public API to use in modules
+@function theme($key, $fallback: null) {
+  @return mapping-scss-variables-to-css-variables($key, $fallback);
+}

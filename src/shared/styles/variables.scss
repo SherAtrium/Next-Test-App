@@ -1,0 +1,53 @@
+// Semantic base tokens (SCSS variables), tuned for contrast/readability
+
+// Light palette
+$white: #fff;
+$surface-1: #f8fafc; // page background
+$surface-2: #f1f5f9; // subtle surfaces
+$border: #e2e8f0; // neutral border
+$text-primary: #0f172a; // slate-900
+$text-muted: #64748b; // slate-500
+
+// Dark palette
+$dark-surface-1: #0b1220; // near-black with slight blue
+$dark-surface-2: #111827; // slate-900
+$dark-border: #334155; // slate-700
+$dark-text-primary: #e5e7eb; // gray-200
+$dark-text-muted: #94a3b8; // slate-400
+
+// Accents
+$blue-500: #3b82f6;
+$blue-400: #60a5fa;
+$content-inset: 1.5rem;
+
+// CSS variable names expressed as SCSS variables (keys for theme maps)
+// Meaningful names
+$theme-bg: --theme-bg; // page background
+$theme-surface: --theme-surface; // elevated/contained surfaces (cards/modals)
+$theme-border: --theme-border; // borders, outlines
+$theme-text: --theme-text; // primary text
+$theme-text-muted: --theme-text-muted; // secondary/muted text
+$theme-accent: --theme-accent; // primary accent
+$theme-accent-weak: --theme-accent-weak; // hover/weak accent
+
+// Light theme map
+$theme-light: (
+        $theme-bg: $surface-1,
+        $theme-surface: $surface-2,
+        $theme-border: $border,
+        $theme-text: $text-primary,
+        $theme-text-muted: $text-muted,
+        $theme-accent: $blue-500,
+        $theme-accent-weak: $blue-400,
+);
+
+// Dark theme map
+$theme-dark: (
+        $theme-bg: $dark-surface-1,
+        $theme-surface: $dark-surface-2,
+        $theme-border: $dark-border,
+        $theme-text: $dark-text-primary,
+        $theme-text-muted: $dark-text-muted,
+        $theme-accent: $blue-500,
+        $theme-accent-weak: $blue-400,
+);

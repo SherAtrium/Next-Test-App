@@ -1,0 +1,9 @@
+@use "sass:map";
+
+@mixin spread-map($map: ()) {
+  @each $key, $value in $map {
+    // $key is a CSS variable name stored in an SCSS variable (e.g., $theme-gray-3)
+    // Interpolate to produce: --theme-gray-3: <value>;
+    #{$key}: $value;
+  }
+}

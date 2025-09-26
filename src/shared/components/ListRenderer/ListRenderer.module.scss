@@ -1,0 +1,12 @@
+@use "@/shared/styles/functions" as *;
+@use "@/shared/styles/variables" as *;
+
+.list {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.item {
+  list-style: disc;
+  color: theme($theme-text);
+}

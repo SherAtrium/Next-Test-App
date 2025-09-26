@@ -1,0 +1,15 @@
+@use "@/shared/styles/functions" as *;
+@use "@/shared/styles/variables" as *;
+
+.title {
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: $content-inset;
+}

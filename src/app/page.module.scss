@@ -1,0 +1,39 @@
+@use "@/shared/styles/functions" as *;
+@use "@/shared/styles/variables" as *;
+
+.innerPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: theme($theme-bg);
+  color: theme($theme-text);
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+  }
+
+  .paragraph {
+    margin-bottom: 1rem;
+    color: theme($theme-text-muted);
+  }
+
+  .list {
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  color: theme($theme-text);
+}

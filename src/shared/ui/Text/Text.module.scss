@@ -1,0 +1,22 @@
+@use "@/shared/styles/functions" as *;
+@use "@/shared/styles/variables" as *;
+
+.base {
+  margin: 0;
+  color: theme($theme-text);
+
+  &.muted {
+    color: theme($theme-text-muted);
+  }
+
+  &.xs { font-size: 0.75rem; }
+  &.sm { font-size: 0.875rem; }
+  &.md { font-size: 1rem; }
+  &.lg { font-size: 1.25rem; }
+  &.xl { font-size: 1.5rem; }
+
+  &.regular { font-weight: 400; }
+  &.medium { font-weight: 500; }
+  &.semibold { font-weight: 600; }
+  &.bold { font-weight: 700; }
+}
