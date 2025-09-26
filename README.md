@@ -4,7 +4,7 @@ This application is built purely for demonstration and testing purposes. It show
 
 ## Demo
 
-- Live on Vercel: https://next-test-app-git-main-sheratriums-projects.vercel.app/
+- Live on Vercel: [demo.vercel.app](next-test-app-chi.vercel.app)
 
 ## Goals
 
