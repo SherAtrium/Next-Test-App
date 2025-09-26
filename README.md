@@ -2,6 +2,10 @@
 
 This application is built purely for demonstration and testing purposes. It showcases common Next.js patterns and a clean project structure while implementing the tasks below.
 
+## Demo
+
+- Live on Vercel: https://next-test-app-git-main-sheratriums-projects.vercel.app/
+
 ## Goals
 
 Разработка веб‑приложения на Next:
@@ -28,7 +32,7 @@ This application is built purely for demonstration and testing purposes. It show
     - SSR (Server‑Side Rendering)
     - CSR (Client‑Side Rendering)
 - API integration:
-    - Local API routes proxying jsonplaceholder
+    - Local API routes proxying jsonplaceholder (for client-side usage)
     - GET/POST examples
 - UI/UX:
     - Reusable components (Button, Text, Input, Modal, FileUpload)

@@ -10,10 +10,9 @@ export const postsApi = {
 		return typeof limit === 'number' ? data.slice(0, limit) : data;
 	},
 
-	// SSR: The server goes to our API route without a cache
+	// SSR: fetch from external API to avoid relying on localhost in server environments
 	async getAllSSR({ limit }: ListParams = {}): Promise<PostProps[]> {
-		// Will be used env variable instead of localhost
-		const data = await fetchJson<PostProps[]>('http://localhost:3000/api/posts', {
+		const data = await fetchJson<PostProps[]>('https://jsonplaceholder.typicode.com/posts', {
 			cache: 'no-store',
 		});
 		return typeof limit === 'number' ? data.slice(0, limit) : data;
